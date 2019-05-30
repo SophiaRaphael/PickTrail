@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import List from './List';
-import fetchList from '../fetchList'
+import fetchList from '../fetchList';
 
 class ListContainer extends Component {
   constructor() {
