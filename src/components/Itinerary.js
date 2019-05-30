@@ -1,14 +1,11 @@
 import React from 'react';
 import List from './List';
-import '../styles/Itinerary.sass';
+import ItineraryNav from './ItineraryNav';
+import '../styles/itinerary.sass';
 
 const Itinerary = ({groupList, itineraryGroups}) => (
   <div>
-    <ul className='itineraryList'>
-      {groupList.map((groupName, key) => { 
-        return <li key={key}><strong>{groupName}</strong></li>
-      })}
-    </ul>
+    <ItineraryNav groupList={groupList} />
     <div className='itineraryBox'>
       {groupList.map((groupName,key) => (
         <List key={key} name={groupName} listItems={itineraryGroups[groupName]}/>

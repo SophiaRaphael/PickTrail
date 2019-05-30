@@ -1,5 +1,5 @@
   import React from 'react';
-  import '../styles/List.sass';
+  import '../styles/list.sass';
 
   const List = ({name, listItems}) => (
     <div className='listBox'>
@@ -7,7 +7,7 @@
       <ul>
         {listItems.map((item, key) => (
           <li key={key}> 
-            <a href={item.url}>{item.text}</a>
+            <a href={item.url}>{item.text.toLowerCase()}</a>
           </li>
         ))}
       </ul>
