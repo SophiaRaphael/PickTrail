@@ -1,4 +1,5 @@
   import React from 'react';
+  import '../styles/List.sass';
 
   const List = ({name, listItems}) => (
     <div className='listBox'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import List from './List';
+import '../styles/Itinerary.sass';
 
 const Itinerary = ({groupList, itineraryGroups}) => (
   <div>
