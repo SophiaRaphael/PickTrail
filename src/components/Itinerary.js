@@ -7,9 +7,9 @@ const Itinerary = ({groupList, itineraryGroups}) => (
   <div>
     <ItineraryNav groupList={groupList} />
     <div className='itineraryBox'>
-      {groupList.map((groupName,key) => (
+      {groupList.map((groupName,key) => 
         <List key={key} name={groupName} listItems={itineraryGroups[groupName]}/>
-      ))}
+      )}
     </div>
   </div>
 );

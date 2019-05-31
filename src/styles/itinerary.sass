@@ -4,6 +4,7 @@
   .listBox
     border-bottom: 1px solid #eee
     +flex 
+    padding-top: 50px
     h2 
       min-width: 100px
       border: none
@@ -16,10 +17,17 @@
   justify-content: center
   border: solid #26cf96
   border-width: 1px 0
-  li 
+  width: 100%
+  background-color: #fff
+  &.fixed-nav
+    position: fixed
+    margin: 0
+    top: 0
+  li a
     padding: 10px 15px
     color: #222
     cursor: pointer
+    font-weight: bold
     &:hover 
       color: #26cf96
 
