@@ -19,10 +19,11 @@
   border-width: 1px 0
   width: 100%
   background-color: #fff
-  &.fixed-nav
+  &.fixedNav
     position: fixed
     margin: 0
     top: 0
+    left: 0
   li a
     padding: 10px 15px
     color: #222
@@ -35,8 +36,17 @@
   .itineraryBox 
     .listBox
       display: block
+      padding: 20px
+      li 
+        width: 100%
   .itineraryList 
     flex-wrap: wrap
+    max-height: 210px
+    overflow-y: scroll
     li
-      width: 10%
-      padding: 10px
+      width: 20%
+      padding: 10px 0
+      text-align: center
+  .fixedNav + .itineraryBox 
+    .listBox
+      padding-top: 200px
