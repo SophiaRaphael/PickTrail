@@ -16,13 +16,13 @@ class ListContainer extends Component {
     const uniqueList = [];
     const map = new Map();
     for (const item of List) {
-        if(!map.has(item.text)){
-            map.set(item.text, true);
-            uniqueList.push({
-                url: item.url,
-                text: item.text
-            });
-        }
+      if (!map.has(item.text)) {
+        map.set(item.text, true);
+        uniqueList.push({
+          url: item.url,
+          text: item.text
+        });
+      }
     }
     return uniqueList;
   }
@@ -32,9 +32,9 @@ class ListContainer extends Component {
     const destinationList = fetchList('destinations');
     const destinations = this.getUniqueList(destinationList);
 
-    this.setState ({
-      destinations: destinations,
-      packages: packages
+    this.setState({
+      destinations,
+      packages
     });
   }
 
