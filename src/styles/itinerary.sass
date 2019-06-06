@@ -1,0 +1,52 @@
+@import 'mixins'
+
+.itineraryBox 
+  .listBox
+    border-bottom: 1px solid #eee
+    +flex 
+    padding-top: 50px
+    h2 
+      min-width: 100px
+      border: none
+    li 
+      width: 50%
+.itineraryList 
+  +flex
+  padding: 10px 0
+  margin: 10px 0
+  justify-content: center
+  border: solid #26cf96
+  border-width: 1px 0
+  width: 100%
+  background-color: #fff
+  &.fixedNav
+    position: fixed
+    margin: 0
+    top: 0
+    left: 0
+  li a
+    padding: 10px 15px
+    color: #222
+    cursor: pointer
+    font-weight: bold
+    &:hover 
+      color: #26cf96
+
+@media (max-width: 767px)
+  .itineraryBox 
+    .listBox
+      display: block
+      padding: 20px
+      li 
+        width: 100%
+  .itineraryList 
+    flex-wrap: wrap
+    max-height: 210px
+    overflow-y: scroll
+    li
+      width: 20%
+      padding: 10px 0
+      text-align: center
+  .fixedNav + .itineraryBox 
+    .listBox
+      padding-top: 200px
